@@ -1,0 +1,61 @@
+/*All Screens*/
+/*http://www.w3schools.com/howto/howto_js_dropdown.asp*/
+	*{
+		box-sizing: border-box;
+	}
+
+	body{
+		display:flex;
+		flex-flow: row wrap;
+		line-height: 1.5em;
+		margin:0%;
+		font-size: 13px;
+		font-family: 'Montserrat', sans-serif;
+
+	}
+
+	header{
+		order: 1;
+		background: #bc0000;
+		width: 100%;
+	}
+	.banner,
+	.bannerMynd img{
+		order:2;
+		min-width: 100%;
+		min-height:445px;
+	}
+
+	/*Dropdown Menu
+	--------------------------------------------------DDM*/
+	a{
+		text-decoration: none;
+		list-style: none; 
+	}
+
+	
+	
+	
+/*Small Screen*/
+@media screen and (min-width: 30em){
+	
+}
+
+/*Medium Screen*/
+@media screen and (min-width: 48em){
+	header{
+		display:inline-block;
+		order: 1;
+		margin:0px;
+	}
+}
+
+/*Large Screen*/
+@media screen and (min-width: 60em){
+	body{
+		/*max-width:60em;*/
+		margin:0px;
+		height:100%;
+		
+	}
+}
