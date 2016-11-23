@@ -1,0 +1,19 @@
+Dropdown menu help fyrir eggert:
+http://www.w3schools.com/howto/howto_css_dropdown.asp
+
+Create a new branch in git and manage branches:
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+Commita breytingar i annan branch i git hub:
+http://stackoverflow.com/questions/2944469/how-to-commit-my-current-changes-to-a-different-branch-in-git
+
+pusha nyjum local branch i remote git repository:
+http://stackoverflow.com/questions/2765421/how-to-push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too
+
+Basic branching og merging fyrir eggert:
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+
+
+
+
+
