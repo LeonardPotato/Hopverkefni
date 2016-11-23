@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopverkefni</title>
   <link rel="stylesheet" href="index.css" type="text/css">
   </head>
   <body>
@@ -12,12 +13,19 @@
 
   	<header>
   		<h1>Header h1 lorem ipsum dolor sit</h1>
-
-  		<nav>
-	  		<ul class="dropdownmenu">
-				<li class="dropdownbutton">DropDownButton<ul class="dropdowncontent"><a url="#">DropDownContent</ul></li><!--Þetta er ad rusta einhverju med flexbox og breidd myndarinnar-->
-				<li class="dropdownbutton">DropDownButton<ul class="dropdowncontent"><a url="#">DropDownContent</ul></li>
-			</ul>
+  		<nav id="navMenu">
+	  	  <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+</ul>
   		</nav>
   	</header>
 
