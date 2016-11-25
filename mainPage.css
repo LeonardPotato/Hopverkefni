@@ -4,10 +4,11 @@
 		box-sizing: border-box;
 	}
 	body{
-		line-height: 1.5em;
+		line-height:0;
 		margin:0%;
 		font-size: 13px;
 		font-family: 'Montserrat', sans-serif;
+		background-color: blue; 
 	}
 	header{
 		display:flex;
@@ -15,8 +16,8 @@
 		background: white;
 		width: 100%;
 		border-top,
-		border-bottom: 0px black solid;
-		height:90px;
+		border-bottom: 0.5px black solid;
+		height:80px;
 		overflow: hidden;
 	}
 	#topNavSpacer{
@@ -28,7 +29,6 @@
 		width:100px;
 		height:auto;
 		padding: 0px;
-		margin-left:20%;
 	}
 	img {
 		width: 100%;
@@ -39,7 +39,6 @@
 	#navHome{
 		width:100%;
 		height:100%;
-		padding-right:40px;
 	}
 	.logoMynd{
 		
@@ -54,20 +53,27 @@
 	/*Dropdown Menu
 	--------------------------------------------------DDM*/
 	#ulMynd{
-	list-style-type: none;
-    overflow: hidden;
-    background-color: white;
-    display:inline-block;
+		list-style-type: none;
+	    overflow: hidden;
+	    background-color: white;
+	    display:inline-block;
 	}
 
 	#ulNav {
-    list-style-type: none;
-    margin: 0;
-    padding-bottom:20px ;
-    overflow: hidden;
-    background-color: white;
-    display:inline-block;
+	    list-style-type: none;
+	    margin: 0;
+	    padding-bottom:20px ;
+	    overflow: hidden;
+	    background-color: white;
+	    display:inline-block;
     
+	}
+	#navMenu{
+		display:flex;
+		align-self:center;
+		align-content: center;
+		align-items: center;
+		justify-content:center;  
 	}
 	#navMenu ul li {
 	    float: left;  
