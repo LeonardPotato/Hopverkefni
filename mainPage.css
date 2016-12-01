@@ -49,12 +49,14 @@
 	}
 
 
-	input:checked ~ .mydropdown{
+	input:checked ~ .ulNav{
 		position: fixed;
 		bottom: 2.5em;
 		left: 0;
 		transition: all 1s ease;
 	}
+	/*
+	-----------------*/
 	#topNavSpacer{
 		height: 25px;
 		background-color:#2b325f;;
@@ -195,6 +197,14 @@
 		order: 1;
 		margin:0px;
 	}
+	.nav-drop{
+		display: none;
+	}
+
+	label{
+		display:none;
+	}
+
 }
 
 /*Large Screen*/
@@ -203,7 +213,6 @@
 		/*max-width:60em;*/
 		margin:0px;
 		height:100%;
-		
 	}
 
 

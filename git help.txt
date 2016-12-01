@@ -14,6 +14,7 @@ Basic branching og merging fyrir eggert:
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 
 
-
+git add -u origin alpha
+git add -u origin master
 
 
