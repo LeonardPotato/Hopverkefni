@@ -5,9 +5,10 @@
 	}
 	body{
 		line-height: 1.5em;
-		margin:0%;
+		margin:0 auto;
 		font-size: 13px;
 		font-family: 'Montserrat', sans-serif;
+		background-color: #e6f2ff;
 	}
 	header{
 		display:flex;
@@ -131,6 +132,50 @@
 		background-color:#bc0000;
 		color:#fff;
 	}
+
+article{
+	margin: 0 auto;
+	height: 450px;
+}
+
+.icons{
+	float: right;margin-right: 500px;
+	font-size: 4em;
+
+}
+.iconsyeah{
+	
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+
+}
+.icon-facebook2:before {
+  content: "\ea91";
+  padding-left: 10px;
+  padding-right: 10px;
+  size: 3em;
+  text-shadow: none;
+}
+.icon-steam2:before {
+  content: "\eaad";
+  padding-left: 10px;
+	padding-right: 10px;
+	  text-shadow: none;
+}
+.icon-skype:before {
+  content: "\eac5";
+  padding-left: 10px;
+	padding-right: 10px;
+	  text-shadow: none;
+}
+.icon-paypal:before {
+  content: "\ead8";
+  padding-left: 10px;
+	padding-right: 10px;
+	  text-shadow: none;
+}
+*/
 	
 /*Small Screen*/
 @media screen and (min-width: 30em){
