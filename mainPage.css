@@ -4,8 +4,8 @@
 		box-sizing: border-box;
 	}
 	body{
-		line-height: 1.5em;
-		margin:0%;
+		line-height: inherit;
+		margin:0px;
 		font-size: 13px;
 		font-family: 'Montserrat', sans-serif;
 	}
@@ -19,40 +19,55 @@
 		height:90px;
 		overflow: hidden;
 	}
-	#topNavSpacer{
-		height: 25px;
-		background-color:#2b325f;;
-	}
-
-	#navHome{
-		width:100px;
-		height:auto;
-		padding: 0px;
-		margin-left:20%;
-	}
 	img {
 		width: 100%;
 		height: auto;
 		border:0;
 		border-style:none;
 	}
-	#navHome{
-		width:100%;
-		height:100%;
-		padding-right:40px;
-	}
-	.logoMynd{
-		
+	ul {
+			margin: 0px;
+			padding: 0px;
+			display: flex;
 	}
 
-	.banner,
-	.bannerMynd{
-		display:flex;
-		order:2;
-		width: 100%;
+	li a, .dropbtn {
+			display: inline-block;
+			color:#4e4d56;
+			text-align: center;
+			padding: 0px 20px;
+			text-decoration: none;
+
 	}
-	/*Dropdown Menu
-	--------------------------------------------------DDM*/
+
+	 li a:hover, .dropdown:hover .dropbtn {
+			text-shadow: 1px 1px black;
+	}
+
+	li.dropdown {
+			display: inline-block;
+	}
+
+	#topNavSpacer{
+		height: 25px;
+		background-color:#2b325f;;
+	}
+
+	#navHome{
+		/*width:100px;
+		height:auto;
+		padding: 0px;
+		margin-left:20%;*/
+	}
+
+	#navHome{
+		/*width:100%;
+		height:100%;
+		padding-right:40px;*/
+	}
+	#navMenu{
+		    height: 90px;
+	}
 	#ulMynd{
 	list-style-type: none;
     overflow: hidden;
@@ -63,15 +78,40 @@
 	#ulNav {
     list-style-type: none;
     margin: 0;
-    padding-bottom:20px ;
+    padding-bottom:0px ;
     overflow: hidden;
     background-color: white;
     display:inline-block;
-    
+
 	}
+	#ulNav li{
+			height:90px;
+			display: table;
+			border-left: black 1px solid;
+	}
+
+	#ulNav li a{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.logoMynd{
+
+	}
+
+	.banner,
+	.bannerMynd{
+		display:flex;
+		order:2;
+		width: 100%;
+	}
+	/*Dropdown Menu
+	--------------------------------------------------DDM*/
+
 	#navMenu ul li {
-	    float: left;  
-	    line-height: 90px;
+	    float: left;
+			height: 90px;
+			max-height: 90px;
 	}
 	/*Typography*/
 	#navMenu ul li{
@@ -84,23 +124,7 @@
 	    font-weight:bold;
 	}
 
-	li a, .dropbtn {
-	    display: inline-block;
-	    color:#4e4d56;
-	    text-align: center;
-	    padding: 0px 20px;
-	    text-decoration: none;
-	    border-left:black 1px solid;
 
-	}
-
-	 li a:hover, .dropdown:hover .dropbtn {
-	    text-shadow: 1px 1px black;
-	}
-
-	li.dropdown {
-	    display: inline-block;
-	}
 
 	.dropdown-content {
 	    display: none;
@@ -131,16 +155,15 @@
 		background-color:#bc0000;
 		color:#fff;
 	}
-	
+
 /*Small Screen*/
 @media screen and (min-width: 30em){
-	
+
 }
 
 /*Medium Screen*/
 @media screen and (min-width: 48em){
 	header{
-		display:inline-block;
 		order: 1;
 		margin:0px;
 	}
@@ -152,6 +175,6 @@
 		/*max-width:60em;*/
 		margin:0px;
 		height:100%;
-		
+
 	}
 }
