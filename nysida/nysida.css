@@ -22,7 +22,7 @@
 	}
 	#topNavSpacer{
 		height: 25px;
-		background-color:#2b325f;;
+		background-color:#2b325f;
 	}
 
 	#navHome{
@@ -42,9 +42,7 @@
 		height:100%;
 		padding-right:40px;
 	}
-	.logoMynd{
-		
-	}
+	
 
 	.banner,
 	.bannerMynd{
@@ -91,7 +89,7 @@
 	    text-align: center;
 	    padding: 0px 20px;
 	    text-decoration: none;
-	    border-left:black 1px solid;
+	    
 
 	}
 
@@ -133,53 +131,170 @@
 		color:#fff;
 	}
 
-article{
-	margin: 0 auto;
-	height: 450px;
+---------------------------------------------
+.header {
+    height: 100px;
 }
 
-.icons{
-	float: right;margin-right: 500px;
+.about-entry{
+	margin: 0 auto; 		
+	height: 200px;
+	width: 100%;
+	font-size: 5em;
+	color: #ff99cc;
+	justify-content: center;
+}
+
+.main {
+    font-size: 1em;
+    padding-top: 5px;
+    padding-left: 10px;
+    justify-content: center;
+
+}
+.aside-1{
+	justify-content: center;
+}
+.aside-2{
+	justify-content: center;
+}
+.paypal{
+font-size: 1.2em;	
+}
+.donation{
+font-size: 1.2em;
+}
+.icons2{
 	font-size: 4em;
-
-}
-.iconsyeah{
-	
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 
 }
-.icon-facebook2:before {
-  content: "\ea91";
-  padding-left: 10px;
-  padding-right: 10px;
-  size: 3em;
-  text-shadow: none;
+.icons{
+	font-size: 4em;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
 }
-.icon-steam2:before {
-  content: "\eaad";
-  padding-left: 10px;
-	padding-right: 10px;
-	  text-shadow: none;
+
+
+---------------------------------------
+.flexContainer{
+	height: 500px;
+	display: flex;
+	
+
 }
-.icon-skype:before {
-  content: "\eac5";
-  padding-left: 10px;
-	padding-right: 10px;
-	  text-shadow: none;
+
+.aside-1,
+.aside-2{
+
+    display: flex;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+  }
+
+article{
+    width: 100%;
+    display: flex;
+  }
+
+
+
+.main {
+    height: 500px;
+    font-family: "Lucida Console", Monaco, monospace;
 }
-.icon-paypal:before {
-  content: "\ead8";
-  padding-left: 10px;
-	padding-right: 10px;
-	  text-shadow: none;
+.facebook-color{
+	color: blue;
+	text-decoration: none;
+	list-style-type: none;
 }
+
+footer ul{
+	list-style: none;
+}
+.hja-footer{
+	height: 50px;
+	background-color: #003d99;
+}
+.inner{
+	display:flex;
+	flex-flow: row;
+	width: 100%;
+	justify-content: center;
+	background-color: #0047b3;
+}
+.about-footer{
+	order: 4;
+	flex-flow:column;
+	box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.5);
+	width:306px;
+	display: flex;
+	padding: 15px;
+	height: 226px;
+	color: white;
+	}
+.about-footer h4{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+.copyright{
+	padding: 15px;
+	order: 5;
+	flex-flow: column;
+	box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.5);
+	width:306px;
+	display: flex;
+	height: 226px;
+	color: white;
+}
+.copyright h4{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+
+.contact-footer{
+	padding: 15px;
+	order: 6;
+	flex-flow:column;
+	box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.5);
+	width:306px;
+	display: flex;
+	height: 226px;
+	color: white;
+	text-align: center;
+	list-style-type: none;
+
+}
+.contact-footer h4{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+/*#BottomNavSpacer{
+		height: 50px;
+		background-color:#2b325f;
+	}
 */
 	
 /*Small Screen*/
 @media screen and (min-width: 30em){
-	
+	body {
+    margin-top: 2.4em;
+  }
+  .aside-1{
+  	float: left;
+    width: 50%;
+  }  
+  .aside-2{
+  	float: left;
+    width: 50%;
+  }
+
 }
 
 /*Medium Screen*/
@@ -188,15 +303,62 @@ article{
 		display:inline-block;
 		order: 1;
 		margin:0px;
+		width: 100%;
 	}
+	.flexContainer{
+	display: flex;
+	flex-direction: row;
+}
+  .aside-1,
+  .aside-2{
+    width: 25%;
+    display: flex;
+  }
+
+  .aside-1{
+    order: 1;
+  }
+  .aside-2{
+    order: 3;
+  }
+  article{
+    order: 2;
+    width: 50%;
+    display: flex;
+  }
 }
 
 /*Large Screen*/
 @media screen and (min-width: 60em){
 	body{
-		/*max-width:60em;*/
-		margin:0px;
-		height:100%;
-		
-	}
+    
+    margin: 0 auto;
+  }
+
+
+  .flexContainer{
+	display: flex;
+	flex-direction: row wrap;
+	
+  	margin-left: auto;
+  	margin-right: auto;
+}
+  .aside-1,
+  .aside-2{
+    width: 25%;
+    display: flex;
+  }
+
+  .aside-1{
+    order: 1;
+  }
+  .aside-2{
+    order: 3;
+  }
+  article{
+    order: 2;
+    width: 50%;
+    display: flex;
+  }
+
 }
