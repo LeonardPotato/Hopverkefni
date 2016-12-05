@@ -1,13 +1,13 @@
 /*All Screens*/
-/*http://www.w3schools.com/howto/howto_js_dropdown.asp*/
 	*{
 		box-sizing: border-box;
 	}
 	body{
-		line-height: 1.5em;
-		margin:0%;
+		line-height: inherit;
+		margin:0px;
 		font-size: 13px;
 		font-family: 'Montserrat', sans-serif;
+		background:url(https://assets.donaldjtrump.com/site/media_bg_rptr.jpg);
 	}
 	header{
 		display:flex;
@@ -17,18 +17,7 @@
 		border-top,
 		border-bottom: 0px black solid;
 		height:90px;
-		overflow: hidden;
-	}
-	#topNavSpacer{
-		height: 25px;
-		background-color:#2b325f;;
-	}
-
-	#navHome{
-		width:100px;
-		height:auto;
-		padding: 0px;
-		margin-left:20%;
+		/*overflow: hidden;*/
 	}
 	img {
 		width: 100%;
@@ -36,26 +25,41 @@
 		border:0;
 		border-style:none;
 	}
-	#navHome{
-		width:100%;
-		height:100%;
-		padding-right:40px;
-	}
-	.logoMynd{
-		
+	ul {
+			margin: 0px;
+			padding: 0px;
+			display: flex;
 	}
 
-	.banner,
-	.bannerMynd{
-		display:flex;
-		order:2;
-		width: 100%;
+	li a, .dropbtn {
+			display: inline-block;
+			color:#4e4d56;
+			text-align: center;
+			padding: 0px 20px;
+			text-decoration: none;
+
 	}
-	/*Dropdown Menu
-	--------------------------------------------------DDM*/
+
+	 li a:hover, .dropdown:hover .dropbtn {
+			text-shadow: 1px 1px black;
+	}
+
+	li.dropdown {
+			display: inline-block;
+	}
+
+	#topNavSpacer{
+		display:flex;
+		order:1;
+		height: 25px;
+		background-color:#2b325f;
+	}
+	#navMenu{
+		    height: 90px;
+	}
 	#ulMynd{
 	list-style-type: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: white;
     display:inline-block;
 	}
@@ -63,15 +67,79 @@
 	#ulNav {
     list-style-type: none;
     margin: 0;
-    padding-bottom:20px ;
-    overflow: hidden;
+    padding-bottom:0px ;
+    /*overflow: hidden;*/
     background-color: white;
     display:inline-block;
-    
+
 	}
+	#ulNav li{
+			height:90px;
+			display: table;
+			border-left: black 1px solid;
+	}
+
+	#ulNav li a{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.dropdown {
+		position: relative;
+	}
+
+	.logoMynd{
+		height:auto;
+		width:90px;
+	}
+
+	.banner,
+	.bannerMynd{
+		display:flex;
+		order:3;
+		width: 100%;
+	}
+	.mainContent{
+		display:flex;
+		flex-flow: column;
+	}
+
+	.aside-1{
+		display:flex;
+		flex-flow: column;
+		order:5;
+		padding:15px;
+		box-shadow:1px 2px 1px 0px rgba(0,0,0,0.5);
+		-webkit-box-shadow:1px 2px 1px 0px rgba(0,0,0,0.5);
+		background-color:white;
+	}
+
+	.article-1{
+		display:flex;
+		flex-flow: column;
+		order:4;
+		padding:15px;
+		box-shadow:1px 3px 2px 1px rgba(0,0,0,0.5);
+		-webkit-box-shadow:1px 3px 2px 1px rgba(0,0,0,0.5);
+		background-color:white;
+		margin: 0px 5px 0px 5px;
+	}
+
+	.footerSpacer{
+		height:3px;
+		background-color:#2b325f;
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+
+
+	/*Dropdown Menu
+	--------------------------------------------------DDM*/
+
 	#navMenu ul li {
-	    float: left;  
-	    line-height: 90px;
+	    float: left;
+			height: 90px;
+			max-height: 90px;
 	}
 	/*Typography*/
 	#navMenu ul li{
@@ -84,30 +152,16 @@
 	    font-weight:bold;
 	}
 
-	li a, .dropbtn {
-	    display: inline-block;
-	    color:#4e4d56;
-	    text-align: center;
-	    padding: 0px 20px;
-	    text-decoration: none;
-	    border-left:black 1px solid;
 
-	}
-
-	 li a:hover, .dropdown:hover .dropbtn {
-	    text-shadow: 1px 1px black;
-	}
-
-	li.dropdown {
-	    display: inline-block;
-	}
 
 	.dropdown-content {
 	    display: none;
 	    position: absolute;
 	    background-color: #fff;
-	    min-width: 160px;
-	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    min-width: 110px;
+	    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+			left: 15px;
+			top: 75px;
 	}
 
 	.dropdown-content a {
@@ -124,23 +178,40 @@
 	}
 
 	.dropdown:hover .dropdown-content {
-	    display: block;
+	    display: flex;
+			flex-flow: column;
+
 	}
 
 	.navEnd{
 		background-color:#bc0000;
 		color:#fff;
 	}
-	
+
+	/*Presidents
+	-----------*/
+	.presidents{
+		margin:5px auto;
+
+	}
+
+	.presidents img{
+		width:155px;
+		height:195px;
+	}
+	.presidents a img:hover{
+		border:3px red solid;
+	}
+
+
 /*Small Screen*/
 @media screen and (min-width: 30em){
-	
+
 }
 
 /*Medium Screen*/
 @media screen and (min-width: 48em){
 	header{
-		display:inline-block;
 		order: 1;
 		margin:0px;
 	}
@@ -150,8 +221,34 @@
 @media screen and (min-width: 60em){
 	body{
 		/*max-width:60em;*/
-		margin:0px;
+		margin:0;
 		height:100%;
-		
+
 	}
+
+	.mainContent{
+		display:flex;
+		flex-flow: row wrap;
+		width: 1140px;
+		/*width: 71.250em;*/
+		margin:5px auto;
+		}
+
+	.aside-1{
+		display:flex;
+		order:5;
+		width:33%;
+	}
+
+	.article-1{
+		display:flex;
+		order:4;
+		width:64%;
+		margin-right:2%;
+	}
+
+	.presidents{
+		width:1140px;
+	}
+	.presidents img
 }

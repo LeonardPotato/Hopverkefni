@@ -1,1 +1,2 @@
 # Hopverkefni
+#Ekkert merkilegt
