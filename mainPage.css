@@ -217,6 +217,25 @@
 	}
 }
 
+#navMobile {
+	display:none;
+}
+
+@media screen and (max-width: 48em){
+	#navMobile{
+		display: flex;
+		margin: 0 auto;
+	}
+
+	#navMobile ul li {
+		border: 0px;
+	}
+
+	#navMenu {
+		display: none;
+	}
+}
+
 /*Large Screen*/
 @media screen and (min-width: 60em){
 	body{
