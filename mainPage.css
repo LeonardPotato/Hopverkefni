@@ -19,6 +19,43 @@
 		height:90px;
 		/*overflow: hidden;*/
 	}
+	input{
+	  display: none;
+	}
+	label{
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  border: 3px outset #999;
+	  background-color: #2b325f;
+	  color: red;
+	  cursor: pointer;
+	  font-size: 1.5em;
+	  text-align: center;
+	  z-index: 2;
+	}
+
+	input:checked + label {
+	  box-shadow: inset 0 .2em .2em rgba(0,0,0,25);
+	  border: 2px inset #999;
+	  color: yellow;
+
+	}
+	#navMobile{
+
+  text-align: center;
+  display: flex;
+  position: fixed;
+  bottom: -15em;
+  left: 0;
+  background-color: yellow;
+  overflow: hidden;
+  transition: all 1s ease;
+  padding-top: 20px;
+  margin: 0;
+  width: 100%;
+	}
 	img {
 		width: 100%;
 		height: auto;
@@ -71,7 +108,8 @@
     /*overflow: hidden;*/
     background-color: white;
     display:inline-block;
-
+     display: flex;
+  
 	}
 	#ulNav li{
 			height:90px;
@@ -214,6 +252,25 @@
 	header{
 		order: 1;
 		margin:0px;
+	}
+}
+
+#navMobile {
+	display:none;
+}
+
+@media screen and (max-width: 40em){
+	#navMobile{
+		display: flex;
+		margin: 0 auto;
+	}
+
+	#navMobile ul li {
+		border: 0px;
+	}
+
+	#navMenu {
+		display: none;
 	}
 }
 

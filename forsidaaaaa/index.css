@@ -82,59 +82,9 @@ body{
   color: white;
 }
 
-@media screen and (min-width: 48em){
-  header{
-    
+/*Small Screen*/
+@media screen and (min-width: 30em){
+  .mobile{
+    display: none;
   }
-.mobile{
-  display: none;
-}
-  
-}
-
-
-
-}
-@media screen and (min-width: 48em){
-  header{
-    
-  }
-
-  #Lokaverkefni{
-
-  display: flex;
-}
-#Lokaverkefni h1{
-  font-size: 1em;
-
-
-}
-
-
-#LokaverkefniKey{
-  position: relative;
-    animation-name: texti;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    overflow: hidden;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-
-}
-@keyframes texti{
-
-  from {left: -7em;}
-    to {left: 18em;}
-     0%  {color:red;}
-    25%  {color:yellow; }
-    50%  {color:blue; }
-    75%  {color:green; }
-    100% {color:red; }
-
-}
-.takki{
-  text-align: center;
-  margin-top: 250px;
-}
 }
