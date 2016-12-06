@@ -42,20 +42,7 @@
 	  color: yellow;
 
 	}
-	#navMobile{
 
-  text-align: center;
-  display: flex;
-  position: fixed;
-  bottom: -15em;
-  left: 0;
-  background-color: yellow;
-  overflow: hidden;
-  transition: all 1s ease;
-  padding-top: 20px;
-  margin: 0;
-  width: 100%;
-	}
 	img {
 		width: 100%;
 		height: auto;
@@ -108,8 +95,7 @@
     /*overflow: hidden;*/
     background-color: white;
     display:inline-block;
-     display: flex;
-  
+
 	}
 	#ulNav li{
 			height:90px;
