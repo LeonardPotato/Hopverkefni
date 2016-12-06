@@ -22,7 +22,7 @@
 	}
 	#topNavSpacer{
 		height: 25px;
-		background-color:#2b325f;;
+		background-color:#2b325f;
 	}
 
 	#navHome{
@@ -42,9 +42,7 @@
 		height:100%;
 		padding-right:40px;
 	}
-	.logoMynd{
-		
-	}
+	
 
 	.banner,
 	.bannerMynd{
@@ -91,7 +89,7 @@
 	    text-align: center;
 	    padding: 0px 20px;
 	    text-decoration: none;
-	    border-left:black 1px solid;
+	    
 
 	}
 
@@ -133,53 +131,178 @@
 		color:#fff;
 	}
 
-article{
-	margin: 0 auto;
-	height: 450px;
+---------------------------------------------
+header{
+	order: 1;
+}
+.aside1{
+	order: 2
+}
+.main{
+	order: 3;
+
+}
+.aside-2{
+	order: 4;
+}
+footer{
+	order: 5;
+}
+.header {
+    height: 100px;
 }
 
-.icons{
-	float: right;margin-right: 500px;
-	font-size: 4em;
-
+.about-entry{
+	margin: 0 auto; 		
+	height: 100px;
+	width: 100%;
+	font-size: 3em;
+	color: #ff99cc;
+	justify-content: center;
 }
-.iconsyeah{
+.main {
 	
+    font-family: "Lucida Console", Monaco, monospace;
+}
+.video{
+	width: 500px;
+	height: 315px;
+}
+
+.paypal{
+font-size: 1em;	
+}
+.donation{
+font-size: 1em;
+}
+.icons2{
+	font-size: 4em;
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+}
+.icons{
+	font-size: 4em;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+---------------------------------------
+.flexContainer{
+	height: 500px;
+	display: flex;
+}
+.aside-1{
+	
+	justify-content: center;
+	
+    display: flex;
+ 	
+}
+.aside-2{
+	justify-content: center;
+	
+    display: flex;
+ 	
+  }
+  .main{
+  	width: 60%;
+  }
+article{
+    width: 100%;
+    display: flex;
+  }
+.facebook-color{
+	color: blue;
+	text-decoration: none;
+	list-style-type: none;
+	
+}
+footer ul{
+	list-style: none;
+}
+.hja-footer{
+	height: 50px;
+	background-color: #003d99;
+}
+.inner{
+	display:flex;
+	flex-flow: column;
+	width: 100%;
+	justify-content: center;
+	background-color: #0047b3;
+}
+.about-footer{
+	order: 4;
+	flex-flow:column;
+	box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.5);
+	width:306px;
+	display: flex;
+	padding: 15px;
+	height: 226px;
+	color: white;
+	}
+.about-footer h4{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+.copyright{
+	padding: 15px;
+	order: 5;
+	flex-flow: column;
+	box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.5);
+	width:306px;
+	display: flex;
+	height: 226px;
+	color: white;
+}
+.copyright h4{
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+
+.contact-footer{
+	padding: 15px;
+	order: 6;
+	flex-flow:column;
+	box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.5);
+	width:306px;
+	display: flex;
+	height: 226px;
+	color: white;
+	list-style-type: none;
 
 }
-.icon-facebook2:before {
-  content: "\ea91";
-  padding-left: 10px;
-  padding-right: 10px;
-  size: 3em;
-  text-shadow: none;
+.contact-footer h4{
+	text-align: center;
+	color: black;
+	font-size: 2em;
 }
-.icon-steam2:before {
-  content: "\eaad";
-  padding-left: 10px;
-	padding-right: 10px;
-	  text-shadow: none;
+.contact-footer a{
+	color: white;
 }
-.icon-skype:before {
-  content: "\eac5";
-  padding-left: 10px;
-	padding-right: 10px;
-	  text-shadow: none;
-}
-.icon-paypal:before {
-  content: "\ead8";
-  padding-left: 10px;
-	padding-right: 10px;
-	  text-shadow: none;
-}
-*/
-	
-/*Small Screen*/
+
 @media screen and (min-width: 30em){
-	
+	body {
+    margin-top: 2.4em;
+  }
+  .video{
+  	width: 100%;
+  }
+  .aside-1{
+  
+  }  
+  .aside-2{
+padding-left: 0;
+    
+  } 
+ .main{
+ 	
+ }
+
 }
 
 /*Medium Screen*/
@@ -188,15 +311,129 @@ article{
 		display:inline-block;
 		order: 1;
 		margin:0px;
+		width: 100%;
 	}
+	
+  .aside-1,
+  .aside-2{
+    width: 25%;
+    display: flex;
+  }
+
+  .aside-1{
+    order: 2;
+  }
+  .aside-2{
+    order: 3;
+  }
+  article{
+    order: 3;
+    width: 50%;
+    display: flex;
+  }
+  .about-footer{
+	order: 4;
+	flex-flow:column;
+
+	width:306px;
+
+	height: 226px;
+	
+	}
+footer{
+	order: 5;
+}
+ .copyright{
+
+	flex-flow: column;
+	
+	width:306px;
+	
+	height: 226px;
+	
+}
+
+
+.contact-footer{
+
+	flex-flow:column;
+	
+	width:306px;
+	
+	height: 226px;
+	
+
+}
+.paypal{
+font-size: 1em;	
+}
+.donation{
+font-size: 1em;
 }
 
 /*Large Screen*/
 @media screen and (min-width: 60em){
 	body{
-		/*max-width:60em;*/
-		margin:0px;
-		height:100%;
-		
-	}
+    
+    margin: 0 auto;
+  }
+.inner{
+	flex-flow: row;
+}
+
+  .flexContainer{
+	display: flex;
+	flex-direction: row wrap;
+	
+  	margin-left: auto;
+  	margin-right: auto;
+}
+  .aside-1,
+  .aside-2{
+    width: 25%;
+    display: flex;
+  }
+
+  .aside-1{
+    order: 1;
+  }
+  .aside-2{
+    order: 3;
+  }
+  article{
+    order: 2;
+    width: 50%;
+    display: flex;
+  }
+
+.about-entry{
+	
+	font-size: 7em;
+}
+.main{
+    font-size: 1em;
+    padding-top: 5px;
+    padding-left: 10px;
+    justify-content: center;
+
+}
+.video{
+	width: 560px;
+	height: 315px;
+}
+.about-entry{
+	margin: 0 auto; 		
+	height: 200px;
+	width: 100%;
+	font-size: 3em;
+	color: #ff99cc;
+	justify-content: center;
+}
+.paypal{
+font-size: 1.2em;	
+}
+.donation{
+font-size: 1.2em;
+}
+
 }
