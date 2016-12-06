@@ -2,46 +2,31 @@ body{
 	margin:0;
 }
 /* BakGrunnur og Textinn */ 
+.LokaverkefniMobile{
+  background: linear-gradient(to top left, black, gray);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  display: flex;
+
+}
+
 .Lokaverkefni{
-	background: linear-gradient(to top left, black, gray);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	margin:0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+
+  display: none;
 }
-.Lokaverkefni h1{
-	font-size: 7em;
+.LokaverkefniMobile h1{
+	font-size: 3em;
 	color: gray;
+  display: flex;
+  text-align: center;
+  justify-content: 
 }
 
 
-#LokaverkefniKey{
-	position: relative;
-    animation-name: texti;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    overflow: hidden;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 
-
-}
-@keyframes texti{
-
-  from {left: -7em;}
-    to {left: 18em;}
-     0%  {color:red;}
-    25%  {color:yellow; }
-    50%  {color:blue; }
-    75%  {color:green; }
-    100% {color:red; }
-
-}
 /* ---------------------------------*/
 
 button.Button1{
@@ -89,22 +74,13 @@ button.Button1{
   text-decoration: none;
 
 }
-/*
+
 @media screen and (min-width: 30em){
   body {
    
   }
   .Lokaverkefni{
-	background: linear-gradient(to top left, black, gray);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	margin:0;
-	padding: 0;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	display: none;
 }
 .Lokaverkefni h1{
 	font-size: 7em;
@@ -180,13 +156,219 @@ button.Button1{
   text-decoration: none;
 
 }
+ @media screen and (min-width: 60em){
+  body{
+    margin: 0 auto;
+  }
+.LokaverkefniMobile{
+  
+}
+.Lokaverkefni{
+display: none;
+
+}
+  @media screen and (min-width: 60em){
+  body{
+    margin: 0 auto;
+  }
+.LokaverkefniMobile{
+  display: none;
+}
+.Lokaverkefni{
+  background: linear-gradient(to top left, black, gray);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lokaverkefni h1{
+  font-size: 7em;
+  color: gray;
+}
+
+
+#LokaverkefniKey{
+  position: relative;
+    animation-name: texti;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+@keyframes texti{
+
+  from {left: -7em;}
+    to {left: 18em;}
+     0%  {color:red;}
+    25%  {color:yellow; }
+    50%  {color:blue; }
+    75%  {color:green; }
+    100% {color:red; }
+
+}
+/* ---------------------------------*/
+
+button.Button1{
+  background: #3b4247;
+  background-image: -webkit-linear-gradient(top, #3b4247, #455f70);
+  background-image: -moz-linear-gradient(top, #3b4247, #455f70);
+  background-image: -ms-linear-gradient(top, #3b4247, #455f70);
+  background-image: -o-linear-gradient(top, #3b4247, #455f70);
+  background-image: linear-gradient(to bottom, #3b4247, #455f70);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #691369;
+  -webkit-box-shadow: 0px 0px 19px #2e162e;
+  -moz-box-shadow: 0px 0px 19px #2e162e;
+  box-shadow: 0px 0px 19px #2e162e;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #0e2838 2px;
+  text-decoration: none;
+  
+}
+.Button1 a{
+  margin-top: 600px;
+  margin-left: 0;
+  color: white;
+  text-decoration: none;
+  
+}
+.Button1{
+  margin-top: 600px;
+  margin-right: 700px;
+  
+  }
+.Button1:hover{
+
+  background: gray;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+
+}
+}
 
   }
-  @media screen and (min-width: 48em){
-  body {
-   
+  @media screen and (min-width: 60em){
+  body{
+    margin: 0 auto;
   }
+.LokaverkefniMobile{
+  
+}
+.Lokaverkefni{
+display: none;
 
+}
+  @media screen and (min-width: 60em){
+  body{
+    margin: 0 auto;
+  }
+.LokaverkefniMobile{
+  display: none;
+}
+.Lokaverkefni{
+  background: linear-gradient(to top left, black, gray);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lokaverkefni h1{
+  font-size: 7em;
+  color: gray;
+}
+
+
+#LokaverkefniKey{
+  position: relative;
+    animation-name: texti;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+@keyframes texti{
+
+  from {left: -7em;}
+    to {left: 18em;}
+     0%  {color:red;}
+    25%  {color:yellow; }
+    50%  {color:blue; }
+    75%  {color:green; }
+    100% {color:red; }
+
+}
+/* ---------------------------------*/
+
+button.Button1{
+  background: #3b4247;
+  background-image: -webkit-linear-gradient(top, #3b4247, #455f70);
+  background-image: -moz-linear-gradient(top, #3b4247, #455f70);
+  background-image: -ms-linear-gradient(top, #3b4247, #455f70);
+  background-image: -o-linear-gradient(top, #3b4247, #455f70);
+  background-image: linear-gradient(to bottom, #3b4247, #455f70);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #691369;
+  -webkit-box-shadow: 0px 0px 19px #2e162e;
+  -moz-box-shadow: 0px 0px 19px #2e162e;
+  box-shadow: 0px 0px 19px #2e162e;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #0e2838 2px;
+  text-decoration: none;
+  
+}
+.Button1 a{
+  margin-top: 600px;
+  margin-left: 0;
+  color: white;
+  text-decoration: none;
+  
+}
+.Button1{
+  margin-top: 600px;
+  margin-right: 700px;
+  
+  }
+.Button1:hover{
+
+  background: gray;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+
+}
 }
 
 */ 
